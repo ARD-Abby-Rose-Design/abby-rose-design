@@ -1,0 +1,175 @@
+:root {
+  --scale-3: 0.64rem;
+  --scale-2: 0.8rem;
+  --scale-1: 1rem;
+  --scale: 1.25rem;
+  --scale1: 1.563rem;
+  --scale2: 1.953rem;
+  --scale3: 2.441rem;
+
+  --header-height: 135px;
+}
+
+.image-container {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.section {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  padding-top: var(--scale3);
+  padding-bottom: var(--scale3);
+  text-align: center;
+}
+
+.statement {
+  color: #221F1F;
+  font-size: 2.441rem;
+  line-height: 1.25;
+  text-align: center;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: calc(100vh - var(--header-height) * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statement > * + * {
+  margin-block-start: 2.441rem;
+}
+
+
+.projects {
+  margin-bottom: 9.313rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.441rem;
+}
+
+.project-card > * + * {
+  margin-block-start: 1rem;
+}
+
+.project-card-heading {
+  font-size: 1.563rem;
+  line-height: 1.25;
+}
+
+
+.partnerships {
+  overflow: hidden;
+  padding: 0 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #221F1F;
+}
+
+.partnerships-grid {
+  display: flex;
+  gap: 1.25rem;
+  white-space: nowrap;
+}
+
+.partnership-card {
+  height: 11.642rem;
+  width: 11.642rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.partnership-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+
+.footer {
+  background-color: #221F1F;
+  padding-top: 7.451rem;
+  padding-bottom: 5.96rem;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: calc(100vw + 20px);
+  height: 70px;
+  background-color: #FFFFFF;
+  transform: rotate(1.953deg);
+}
+
+.footer-logo-grid {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-plus {
+  font-size: 1.563rem;
+  color: #FFFFFF;
+}
+
+.footer-shopify-plus {
+  display: block;
+  max-width: 200px;
+  position: relative;
+  top: 3px;
+}
+
+.footer-shopify-plus svg {
+  width: 100%;
+}
+
+.footer-links {
+  font-size: 0;
+  margin-bottom: 1.953rem;
+}
+
+.footer-links a {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.footer-links a span {
+  transition: box-shadow 175ms;
+}
+
+.footer-links a:hover span {
+  box-shadow: inset 0px -2px 0px 0px #FFFFFF;
+}
+
+
+.footer-copyright {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
